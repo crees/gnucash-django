@@ -71,7 +71,7 @@ Installation
 
    You can use this command to generate a `SECRET_KEY` value:
 
-        python -c 'import random; r=random.SystemRandom(); print "".join([r.choice("abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)") for i in range(50)])'
+        python -c 'import random; r=random.SystemRandom(); print ("".join([r.choice("abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)") for i in range(50)]))'
 
  - Create the database structure: `python manage.py syncdb`
 
